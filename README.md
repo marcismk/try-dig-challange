@@ -12,4 +12,8 @@ To start app run these commands
 
 ## Tech stack
 
-App is based on Create React App Typescript template. To handle persistance, [zustand](https://github.com/pmndrs/zustand) state management is used. For Icons [Tabler Icons](https://tabler-icons.io/) is used.
+App is based on Create React App Typescript template.
+
+- To handle persistance, [zustand](https://github.com/pmndrs/zustand) state management is used.
+- For Icons [Tabler Icons](https://tabler-icons.io/) is used.
+- For Swipe events [React Swipeable](https://github.com/FormidableLabs/react-swipeable) is used.
