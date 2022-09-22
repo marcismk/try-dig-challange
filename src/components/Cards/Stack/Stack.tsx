@@ -7,9 +7,10 @@ import "./Stack.css";
 interface Props {
   currentCard: number;
   cards: ICard[];
+  onAction: (value: "like" | "dislike") => void;
 }
 
-export const Stack = ({ currentCard, cards }: Props) => {
+export const Stack = ({ currentCard, cards, onAction }: Props) => {
   const error = useCardStore((state) => state.error);
 
   const stack = useMemo(() => {
@@ -27,7 +28,7 @@ export const Stack = ({ currentCard, cards }: Props) => {
     <div className="stack">
       {stack &&
         stack.map((card, index) => (
-          <Card key={card.id} index={index} card={card} />
+          <Card key={card.id} index={index} card={card} onAction={onAction} />
         ))}
       {error && <span className="error">{error}</span>}
     </div>

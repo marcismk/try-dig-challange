@@ -10,6 +10,8 @@
   aspect-ratio: 13/22;
   overflow: hidden;
   background-size: cover;
+
+  transition: all 0.3s;
 }
 
 .card-content {

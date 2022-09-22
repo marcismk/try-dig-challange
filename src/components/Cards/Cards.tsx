@@ -47,7 +47,11 @@ export const Cards = () => {
         />
         <IconArrowNarrowLeft onClick={handlePrev} />
       </div>
-      <Stack currentCard={currentCard} cards={cards} />
+      <Stack
+        currentCard={currentCard}
+        cards={cards}
+        onAction={handleLikeDislike}
+      />
       <div className="actions">
         <IconArrowNarrowRight onClick={handleNext} />
         <IconThumbUp
