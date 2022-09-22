@@ -3,5 +3,5 @@ export interface ICard {
   title: string;
   body: string;
   image: string;
-  status: null;
+  status: string;
 }

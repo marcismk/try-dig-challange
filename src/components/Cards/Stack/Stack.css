@@ -1,0 +1,14 @@
+.stack {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 2;
+  margin-left: -20px;
+  flex-shrink: 1;
+}
+
+.error {
+  color: firebrick;
+  text-align: center;
+  font-weight: bold;
+}

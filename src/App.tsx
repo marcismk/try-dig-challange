@@ -1,7 +1,12 @@
-import "./App.css";
+import { Cards, Header } from "components";
 
 function App() {
-  return <div className="App">{/* List of cards */}</div>;
+  return (
+    <div className="content">
+      <Header />
+      <Cards />
+    </div>
+  );
 }
 
 export default App;

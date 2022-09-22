@@ -1,0 +1,29 @@
+.card {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  background-color: var(--primaryColor);
+  border: solid 3px var(--white);
+  border-radius: 30px;
+  max-width: 12rem;
+  aspect-ratio: 13/22;
+  overflow: hidden;
+  background-size: cover;
+}
+
+.card-content {
+  padding: 1rem;
+  background: linear-gradient(
+    180deg,
+    rgba(213, 213, 213, 0) 0%,
+    rgb(213, 213, 213, 0.5) 55%
+  );
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-height: 250px;
+    font-size: smaller;
+  }
+}

@@ -22,10 +22,11 @@ export const useCardStore = create<CardState>()(
             const data = await client({ method: "GET", url });
 
             if (data) {
+              const newRows = data as ICard[];
               set(
                 () => ({
                   error: undefined,
-                  cards: data as ICard[],
+                  cards: newRows.reverse(), // Data reversed to display in stack in correct order
                 }),
                 false,
                 { type: "getCards" }
