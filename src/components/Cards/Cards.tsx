@@ -22,7 +22,7 @@ export const Cards = () => {
     }
   }, [cards.length, getCards]);
 
-  const getCurrentCardStatus = () => cards[currentCard].status;
+  const getCurrentCardStatus = () => cards[currentCard]?.status;
 
   const handlePrev = () => {
     setCurrentCard(currentCard > 0 ? currentCard - 1 : cards.length - 1);

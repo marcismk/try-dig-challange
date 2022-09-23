@@ -18,7 +18,6 @@ body {
 }
 
 #root {
-  border: dashed 2px red;
   height: 100%;
   box-sizing: border-box;
   position: relative;
